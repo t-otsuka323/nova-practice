@@ -25,3 +25,15 @@ export function getRoomCount(facilityId) {
   };
   return rooms[facilityId] ?? null;
 }
+
+// 施設IDから種別を返す関数
+export function getFacilityType(facilityId) {
+  const types = {
+    sankara: 'hotel',
+    samana: 'hotel',
+    plaza: 'hotel',
+    sakurai: 'hotel',
+    dijest: 'bar',
+  };
+  return types[facilityId] ?? null;
+}
