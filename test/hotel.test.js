@@ -10,6 +10,10 @@ describe('getFacilityName', () => {
     );
   });
 
+  test('plaza の施設名が正しく返る', () => {
+    assert.strictEqual(getFacilityName('plaza'), '奈良プラザホテル');
+  });
+
   test('存在しない施設IDは null を返す', () => {
     assert.strictEqual(getFacilityName('unknown'), null);
   });
